@@ -17,10 +17,9 @@ In this project we will try to let an AI agent learn to play Connect 4 using Mon
 
 ## 📝 Rules and Strategies of the game
 
+## 📂 Monte Carlo Search
+
 ## 💻 Technical Overview
-
-### 📂 Monte Carlo Search
-
 ### 📦 libraries and packages
 
 ## 🛠️ Algorithm and Implementation
