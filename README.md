@@ -15,7 +15,31 @@ Connect Four is a great game for Monte Carlo search algorithms because it has a 
 
 In this project we will try to let an AI agent learn to play Connect 4 using Monte Carlo Search algorithms and evaluate its performance.
 
-## 📝 Rules and Strategies of the game
+## ⚡️ Connect four
+Connect Four is a classic game that has been around for over a century. However, it wasn't until 1974 that the game was officially licensed by Milton Bradley.
+
+In October of 1988, James Dow Allen officially found a way for the first player to win the game every single time using his strategy. Other people and technologies have also solved this game.
+
+
+### 📝 Rules of the game
+Playing Connect Four requires following a simple set of rules:
+
+1. Two players take turns dropping colored discs into a vertical grid.
+2. The discs fall to the bottom of the grid or on top of other discs.
+3. The objective is to connect four of the same colored discs vertically, horizontally, or diagonally.
+4. Players can only drop one disc at a time.
+5. The game ends if there is a four-in-a-row, which means that a player needs to place their colored discs in a consecutive line of four either vertically, horizontally, or diagonally on the game board.
+6. The game ends too if there is no more moves can be made.
+7. Players should alternate who goes first each game. For example, the first player of the first game will go second during the second game.
+
+### 🏷️ Strategies of the game
+There are several strategies that players can use to improve their chances of winning at Connect Four, including:
+
+1. Select the middle column for a first move to maintain a strong central position.
+2. Choose another bottom row slot with the second move.
+3. Blocking the opponent's potential four-in-a-row while working towards your own.
+4. Trying to create multiple threats at the same time to force the opponent to choose which to block.
+5. Avoiding placing discs in the bottom row as this can limit future moves.
 
 ## 📂 Monte Carlo Search
 
@@ -40,6 +64,8 @@ In this project we will try to let an AI agent learn to play Connect 4 using Mon
 ## 🗺️ References and Resources
 * [Monte Carlo search - Tristan Cazenave](https://www.lamsade.dauphine.fr/~cazenave/MonteCarlo.pdf)
 * [Game AI: Learning to play Connect 4 using Monte Carlo Tree Search](https://pranav-agarwal-2109.medium.com/game-ai-learning-to-play-connect-4-using-monte-carlo-tree-search-f083d7da451e)
+* [How to Play Connect Four (Rules and Instructions)](https://groupgames101.com/connect-four-rules/)
+* [Wkihow - How to Play Connect 4](https://www.wikihow.com/Play-Connect-4)
 
 
 
