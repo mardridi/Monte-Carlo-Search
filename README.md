@@ -1,4 +1,4 @@
-# 🎮 Connect Four Monte Carlo Simulation 
+# 🎮 Connect Four Monte Carlo Search
 
 ## 🚀 Introduction
 
