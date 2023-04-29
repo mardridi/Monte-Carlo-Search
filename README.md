@@ -42,6 +42,23 @@ There are several strategies that players can use to improve their chances of wi
 5. Avoiding placing discs in the bottom row as this can limit future moves.
 
 ## 📂 Monte Carlo Search
+Monte Carlo Tree Search (MCTS) is an algorithm used to find optimal decisions in a domain by building a search tree using random simulations to estimate the value of actions. It has had a profound impact on AI approaches for games and planning problems.
+
+The algorithm progressively builds a partial game tree, guided by the results of previous exploration, until a predefined computational budget is reached. Each node in the tree represents a state of the domain, and directed links to child nodes represent actions leading to subsequent states.
+
+The estimates of the most promising moves become more accurate as the tree is built, leading to a best-first strategy.
+
+
+
+### 🔖 Monte Carlo Tree Search
+
+The Monte Carlo Tree Search (MCTS) is a technique used to identify the best decision in a given problem domain by sampling the decision space randomly and constructing a search tree based on the outcomes. 
+
+MCTS has had a significant impact on AI methods for domains that can be represented as sequential decision trees, such as games and planning problems. 
+
+In simple terms, MCTS is a way to explore possible decisions in a problem space by simulating outcomes and selecting the best path forward based on those simulations.
+
+### 💬 Nested Monte Carlo Search
 
 ## 💻 Technical Overview
 ### 📦 libraries and packages
@@ -65,7 +82,7 @@ There are several strategies that players can use to improve their chances of wi
 * [Monte Carlo search - Tristan Cazenave](https://www.lamsade.dauphine.fr/~cazenave/MonteCarlo.pdf)
 * [Game AI: Learning to play Connect 4 using Monte Carlo Tree Search](https://pranav-agarwal-2109.medium.com/game-ai-learning-to-play-connect-4-using-monte-carlo-tree-search-f083d7da451e)
 * [How to Play Connect Four (Rules and Instructions)](https://groupgames101.com/connect-four-rules/)
-* [Wkihow - How to Play Connect 4](https://www.wikihow.com/Play-Connect-4)
+
 
 
 
