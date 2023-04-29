@@ -49,16 +49,12 @@ The algorithm progressively builds a partial game tree, guided by the results of
 The estimates of the most promising moves become more accurate as the tree is built, leading to a best-first strategy.
 
 During each search iteration of the Monte Carlo Tree Search algorithm, the following four steps are applied:
+1. "Selection:" Starting from the root node, traverse the tree by selecting the most promising child nodes, using a tree policy that balances exploration and exploitation.
+2. "Expansion:" Once a leaf node is reached, expand it by adding one or more child nodes to represent possible moves from that state.
+3. "Simulation:" Perform a simulated playout from the newly added child node, by making random moves until a terminal state is reached.
+4. "Backpropagation:" Update the statistics of all nodes visited during the selection and expansion phases, based on the outcome of the simulated playout. This information is used to improve the estimates of the values of different moves, and ultimately guide the selection of moves in future iterations.
 
 ![Image](MCTS_steps.png)
-
-1. Selection: Starting from the root node, traverse the tree by selecting the most promising child nodes, using a tree policy that balances exploration and exploitation.
-
-2. Expansion: Once a leaf node is reached, expand it by adding one or more child nodes to represent possible moves from that state.
-
-3. Simulation: Perform a simulated playout from the newly added child node, by making random moves until a terminal state is reached.
-
-4. Backpropagation: Update the statistics of all nodes visited during the selection and expansion phases, based on the outcome of the simulated playout. This information is used to improve the estimates of the values of different moves, and ultimately guide the selection of moves in future iterations.
 
 ### 🔖 Monte Carlo Tree Search
 
