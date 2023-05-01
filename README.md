@@ -66,14 +66,21 @@ In simple terms, MCTS is a way to explore possible decisions in a problem space 
 
 ### 💬 Nested Monte Carlo Search
 
+Nested Monte-Carlo Search is an algorithm used to guide search towards better states when there is no heuristic available to order moves. This is achieved by using random games to score positions and evaluate their interest. 
+
+The algorithm uses nested levels of random games to guide the search. At each level of the search, all possible moves are tried, and a nested search is played at the lower level after each move. 
+
+It memorizes the move associated with the best score of the lower level searches. If none of the moves improve on the best sequence found by a previous search, the move of the best sequence is played, otherwise, the best sequence is updated with the newly found sequence and the best move is chosen.
+
 ## 💻 Technical Overview
 ### 📦 libraries and packages
 
 ## 🛠️ Algorithm and Implementation
 
+### 🕹️ Connect Four game implementation
+
 ### 🧠 Monte Carlo algorithm implementation
 
-### 🕹️ Connect Four game implementation
 
 
 ## 📈 Results and Performance 
@@ -88,6 +95,9 @@ In simple terms, MCTS is a way to explore possible decisions in a problem space 
 * [Monte Carlo search - Tristan Cazenave](https://www.lamsade.dauphine.fr/~cazenave/MonteCarlo.pdf)
 * [Game AI: Learning to play Connect 4 using Monte Carlo Tree Search](https://pranav-agarwal-2109.medium.com/game-ai-learning-to-play-connect-4-using-monte-carlo-tree-search-f083d7da451e)
 * [How to Play Connect Four (Rules and Instructions)](https://groupgames101.com/connect-four-rules/)
+* [A Survey of Monte Carlo Tree Search Methods](https://www.lamsade.dauphine.fr/~cazenave/A+Survey+of+Monte+Carlo+Tree+Search+Methods.pdf)
+* [Nested Monte-Carlo Search-Tristan Cazenave](https://www.lamsade.dauphine.fr/~cazenave/papers/nested.pdf)
+
 
 
 
