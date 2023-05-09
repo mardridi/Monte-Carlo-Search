@@ -75,6 +75,18 @@ It memorizes the move associated with the best score of the lower level searches
 ## 💻 Technical Overview
 ### 📦 libraries and packages
 
+#### kaggle-environments>=0.1.6:
+It is a Python package that provides a simulation environment for various games and competitions hosted on Kaggle. This package allows users to define agents that can interact with the game environment and play against other agents. It also provides tools for visualizing the game states and actions taken by the agents. In this project, the kaggle-environments package is used to simulate and evaluate the performance of the Monte Carlo search algorithm for the game of Connect Four.
+
+#### Random:
+The random library is a standard Python library that provides a suite of functions for generating random numbers, as well as other random operations like shuffling and selecting random elements from a list. It is often used in simulations, games and other applications that require random behavior.
+
+#### Math:
+The math library in Python provides various mathematical functions for performing mathematical operations in Python. It includes functions for basic operations like addition, subtraction, multiplication and division, as well as more advanced functions like logarithms, trigonometric functions, and statistical functions.
+
+#### Time:
+The time library in Python provides various time-related functions. It allows the Python interpreter to pause or delay execution of code for a certain period of time, measure the time taken by a block of code to execute and retrieve the current time and date. 
+
 ## 🛠️ Algorithm and Implementation
 
 ### 🕹️ Connect Four game implementation
