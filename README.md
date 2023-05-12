@@ -13,7 +13,7 @@ Connect Four is a great game for Monte Carlo search algorithms because it has a 
 
 ###  🎯 Project goals and objectives
 
-In this project we will try to let an AI agent learn to play Connect 4 using Monte Carlo Search algorithms and evaluate its performance.
+In this project we will try to let an AI agent learn to play Connect 4 using Monte Carlo Search algorithms and evaluate its performance with a random agent.
 
 ## ⚡️ Connect four
 Connect Four is a classic game that has been around for over a century. However, it wasn't until 1974 that the game was officially licensed by Milton Bradley.
@@ -88,16 +88,56 @@ The math library in Python provides various mathematical functions for performin
 The time library in Python provides various time-related functions. It allows the Python interpreter to pause or delay execution of code for a certain period of time, measure the time taken by a block of code to execute and retrieve the current time and date. 
 
 ## 🛠️ Algorithm and Implementation
+In this project,  We implemented two agents for the "ConnectX" game using the Monte Carlo Tree Search (MCTS) algorithm and Nested Monte Carlo Search.
 
-### 🕹️ Connect Four game implementation
+### 🕹️ Monte Carlo Tree Search algorithm implementation
+In our project, we implemented several classes and functions to create an intelligent agent using the Monte Carlo Tree Search (MCTS) algorithm for the game "ConnectX."
 
+We utilized three main files to facilitate the implementation of our intelligent agent.
+
+These files are the mcts_agent.py, state.py, and connect_4.ipynb.
+
+#### mcts_agent.py file
+The mcts_agent.py file contains the agent_mcts class, which is responsible for handling the MCTS algorithm and its related functionalities. It contains methods such as play to make a move on the board, check_win to determine if a winning condition is met, and check_tie to check for a tie game. 
+
+The agent_mcts class also includes a default_policy_simulation method that performs random simulations to evaluate the outcome of the game.
+
+#### state.py file
+The state.py file contains the State class, which represents a state in the game. It stores the current board configuration, the player's mark, and other relevant information.
+
+The State class keeps track of child states, calculates UCT scores using the uct_score function, and performs simulations and backpropagation to update the node statistics during the MCTS search.
+
+In this file, we will find the uct_score function, which calculates the UCT score for a node based on its total score, total visits, and the number of visits of its parent node. It uses the formula that balances the exploitation of high-scoring nodes with the exploration of unexplored nodes, incorporating a constant value Cp that controls the level of exploration.
+
+#### connect_4.ipynb file
+The connect_4.ipynb file is the Jupyter Notebook where we bring everything together.
+
+In fact, the combination of the agent_mcts class, the State class, and the uct_score function provides the necessary components to implement the MCTS algorithm and create a competitive game-playing agent.
+
+We begin by setting up the environment using the "kaggle-environments" library and extracting the game configuration. Then, a Connect Four game is initialized and run using the environment, and the game board is rendered.
+
+The Monte Carlo Tree Search (MCTS) implementation is defined in the "run_mcts_agent" function. It initializes the MCTS agent and performs iterations until a time limit is reached. 
+
+The agent uses the "mcts_agent.py" and "state.py" files, which contain the necessary classes and functions for the MCTS algorithm.
 ### 🧠 Monte Carlo algorithm implementation
+
 
 
 
 ## 📈 Results and Performance 
 
+###  Monte Carlo Tree Search evaluation
+In the evaluation of the Monte Carlo Tree Search (MCTS) agent against a random agent, 50 episodes of the Connect Four game were played. The agent's performance was assessed based on the rewards obtained from these episodes.
 
+The mean reward achieved by the MCTS agent was calculated to be 0.4. This indicates that, on average, the agent achieved a positive outcome in the game. A mean reward of 0.0 would suggest a neutral performance, while negative values would indicate a suboptimal performance. 
+
+Therefore, the obtained mean reward of 0.4 indicates a reasonably good performance by the MCTS agent.
+
+Additionally, the win rate of the MCTS agent was determined to be 0.7. This means that the agent won approximately 70% of the games played against the random agent.
+
+A higher win rate signifies a stronger performance, indicating that the MCTS agent demonstrated a significant advantage over the random agent.
+
+These evaluation results highlight the effectiveness of the MCTS algorithm in playing Connect Four. The agent's ability to consistently achieve positive outcomes and a high win rate demonstrates its proficiency in strategic decision-making and efficient exploration of the game tree.
 
 ## 💡 Conclusion
 
