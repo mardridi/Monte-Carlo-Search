@@ -20,34 +20,6 @@ class agent_mcts:
         row = max([i for i in range(self.rows) if board[column + (i * self.columns)] == EMPTY])
         board[column + (row * self.columns)] = mark
         
-#     def check_win(self,board,column,mark):
-#         columns = self.columns
-#         rows = self.rows
-#         inarow = self.inarow
-#         row = min([r for r in range(rows) if board[column + (r * columns)] == mark])
-        
-#         # Check vertical direction
-#         for r in range(rows - inarow + 1):
-#             if all(board[(r + i) * columns + column] == mark for i in range(inarow)):
-#                 return True
-
-#         # Check horizontal direction
-#         for c in range(columns - inarow + 1):
-#             if all(board[row * columns + (c + i)] == mark for i in range(inarow)):
-#                 return True
-
-#         # Check diagonal directions
-#         for r in range(rows - inarow + 1):
-#             for c in range(columns - inarow + 1):
-#                 if all(board[(r + i) * columns + (c + i)] == mark for i in range(inarow)):
-#                     return True
-
-#         for r in range(rows - inarow + 1):
-#             for c in range(inarow - 1, columns):
-#                 if all(board[(r + i) * columns + (c - i)] == mark for i in range(inarow)):
-#                     return True
-
-#         return False
 
     def check_win(self,board, column, mark):
         """ Checks for a win. """
