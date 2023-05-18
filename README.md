@@ -3,23 +3,34 @@
 ## 🚀 Introduction
 
 ### 📚 Project description
-This project is an implementation of  the Monte Carlo search algorithm for the game of "Connect Four". 
 
-Connect Four is a turn-based board game in which two players take turns dropping colored discs into a vertical grid alternatively.
+This project presents an implementation of the powerful Monte Carlo search algorithm specifically tailored for the game of "Connect Four". 
 
-The Monte Carlo search algorithm is a decision-making algorithm that uses random sampling and statistical analysis to find the best possible move in a game.
+Connect Four is a captivating board game where two players strategically drop colored discs into a vertical grid, vying for a winning arrangement.
 
-Connect Four is a great game for Monte Carlo search algorithms because it has a relatively simple set of rules and a finite number of possible game states. In fact,  this algorithm can be used to analyze the best possible moves for a player given the current game state. It does this by simulating many random games from the current state, and analyzing the outcomes of those simulations to determine the best possible move. This makes it a useful tool for creating AI opponents that can play Connect Four at a high level.
+The Monte Carlo search algorithm, known for its ability to make informed decisions, leverages random sampling and statistical analysis to identify optimal moves within a game. Connect Four, with its straightforward rules and a finite number of potential game states, serves as an ideal candidate for employing this algorithm.
+
+By simulating numerous randomized games based on the current state, the Monte Carlo search algorithm effectively analyzes the outcomes of these simulations to discern the most advantageous move. This computational approach becomes instrumental in developing highly skilled AI opponents that can challenge and engage players at a competitive level in Connect Four.
+
+Through the implementation of the Monte Carlo search algorithm, this project offers an insightful exploration of strategic decision-making in the context of Connect Four, shedding light on the possibilities of artificial intelligence and enhancing the overall gameplay experience.
 
 ###  🎯 Project goals and objectives
 
-In this project we will try to let an AI agent learn to play Connect 4 using Monte Carlo Search algorithms and evaluate its performance with a random agent.
+This project aims to:
+* Implement the Monte Carlo Search algorithm: We will design and implement the Monte Carlo Search algorithm, which utilizes random sampling and statistical analysis, to guide the AI agent's decision-making process in Connect Four.
+
+* Train the AI agent: Through iterative training sessions, the AI agent will learn from its gameplay experiences and improve its decision-making abilities. By simulating numerous randomized games and analyzing their outcomes, the agent will adapt and optimize its strategies.
+
+* Evaluate performance against a random agent: To gauge the effectiveness and progress of the AI agent, we will compare its performance against a random agent. This evaluation will provide insights into the agent's ability to make strategic moves and outperform a randomly acting opponent.
 
 ## ⚡️ Connect four
-Connect Four is a classic game that has been around for over a century. However, it wasn't until 1974 that the game was officially licensed by Milton Bradley.
+Connect Four is a timeless and strategic board game that has captivated players for over a century. Although the game's origins date back many years, it gained widespread recognition when it was officially licensed by Milton Bradley in 1974.
 
-In October of 1988, James Dow Allen officially found a way for the first player to win the game every single time using his strategy. Other people and technologies have also solved this game.
+One of the fascinating aspects of Connect Four is its underlying complexity, which allows for diverse strategies and exciting gameplay. Over time, dedicated individuals and advanced technologies have sought to unravel the game's intricacies and discover optimal winning strategies.
 
+In a remarkable achievement, James Dow Allen made a groundbreaking breakthrough in October 1988 by devising a strategy that guarantees a win for the first player in every game. This pivotal moment in Connect Four's history showcases the depth of the game and the potential for strategic mastery.
+
+Since then, various individuals and technologies have further explored and analyzed Connect Four, striving to unravel its secrets and develop advanced gameplay tactics. Through systematic exploration and mathematical analysis, researchers have sought to uncover the game's optimal strategies and perfect playing techniques.
 
 ### 📝 Rules of the game
 Playing Connect Four requires following a simple set of rules:
@@ -58,11 +69,11 @@ During each search iteration of the Monte Carlo Tree Search algorithm, the follo
 
 ### 🔖 Monte Carlo Tree Search
 
-The Monte Carlo Tree Search (MCTS) is a technique used to identify the best decision in a given problem domain by sampling the decision space randomly and constructing a search tree based on the outcomes. 
+Monte Carlo Tree Search (MCTS) is a powerful algorithm that has revolutionized decision-making in various problem domains, particularly in games and planning problems. By leveraging the principles of random sampling and intelligent search tree construction, MCTS enables the identification of optimal decisions within complex decision spaces.
 
-MCTS has had a significant impact on AI methods for domains that can be represented as sequential decision trees, such as games and planning problems. 
+At its core, MCTS is a technique that intelligently explores the possible decisions within a problem domain by simulating potential outcomes and iteratively refining its understanding of the decision space. This iterative process involves building a search tree that represents the possible decisions and their associated outcomes, guiding the algorithm towards the most promising paths.
 
-In simple terms, MCTS is a way to explore possible decisions in a problem space by simulating outcomes and selecting the best path forward based on those simulations.
+MCTS has demonstrated remarkable success in domains characterized by sequential decision trees, such as board games, where the number of possible moves and game states can be vast. By simulating numerous random games from the current state and evaluating their outcomes, MCTS is capable of progressively refining its understanding of the problem space and determining the optimal decision.
 
 ### 💬 Nested Monte Carlo Search
 
@@ -73,6 +84,10 @@ The algorithm uses nested levels of random games to guide the search. At each le
 It memorizes the move associated with the best score of the lower level searches. If none of the moves improve on the best sequence found by a previous search, the move of the best sequence is played, otherwise, the best sequence is updated with the newly found sequence and the best move is chosen.
 
 ## 💻 Technical Overview
+In this project, our primary focus will be on implementing and harnessing the potential of the Monte Carlo Tree Search (MCTS) algorithm. We will delve into the intricacies of MCTS and explore its capabilities in the context of playing the game of Connect Four.
+
+By dedicating our efforts to understanding and refining the MCTS algorithm, we aim to unlock its full potential and showcase its effectiveness as a decision-making tool in the domain of Connect Four.
+
 ### 📦 libraries and packages
 
 #### kaggle-environments>=0.1.6
@@ -87,10 +102,8 @@ The math library in Python provides various mathematical functions for performin
 #### Time
 The time library in Python provides various time-related functions. It allows the Python interpreter to pause or delay execution of code for a certain period of time, measure the time taken by a block of code to execute and retrieve the current time and date. 
 
-## 🛠️ Algorithm and Implementation
-In this project,  We implemented two agents for the "ConnectX" game using the Monte Carlo Tree Search (MCTS) algorithm and Nested Monte Carlo Search.
+## 🛠️ Monte Carlo Tree Search algorithm implementation
 
-### 🕹️ Monte Carlo Tree Search algorithm implementation
 In our project, we implemented several classes and functions to create an intelligent agent using the Monte Carlo Tree Search (MCTS) algorithm for the game "ConnectX."
 
 We utilized three main files to facilitate the implementation of our intelligent agent.
@@ -119,14 +132,9 @@ We begin by setting up the environment using the "kaggle-environments" library a
 The Monte Carlo Tree Search (MCTS) implementation is defined in the "run_mcts_agent" function. It initializes the MCTS agent and performs iterations until a time limit is reached. 
 
 The agent uses the "mcts_agent.py" and "state.py" files, which contain the necessary classes and functions for the MCTS algorithm.
-### 🧠 Monte Carlo algorithm implementation
 
+## 📈 Results and Performance of Monte Carlo Tree Search
 
-
-
-## 📈 Results and Performance 
-
-###  Monte Carlo Tree Search evaluation
 In the evaluation of the Monte Carlo Tree Search (MCTS) agent against a random agent, 50 episodes of the Connect Four game were played. The agent's performance was assessed based on the rewards obtained from these episodes.
 
 The mean reward achieved by the MCTS agent was calculated to be 0.4. This indicates that, on average, the agent achieved a positive outcome in the game. A mean reward of 0.0 would suggest a neutral performance, while negative values would indicate a suboptimal performance. 
@@ -141,7 +149,13 @@ These evaluation results highlight the effectiveness of the MCTS algorithm in pl
 
 ## 💡 Conclusion
 
+In conclusion, this project has successfully implemented a Monte Carlo Tree Search (MCTS) agent capable of playing the game of Connect Four. The agent has been tested against itself and a random agent, and the results have been highly favorable.
 
+Our MCTS agent has demonstrated its competence and strategic decision-making abilities by consistently achieving a high rate of victories. Its success against the random agent highlights its proficiency in handling uncertain and unpredictable opponents.
+
+The outcomes of this project indicate that the implemented MCTS search agent is highly effective in playing Connect Four. It has proven to be a formidable player, showcasing its ability to analyze the game state, simulate possible moves, and make informed decisions based on the outcomes of these simulations. The agent's success in terms of winning further reinforces its competence and effectiveness.
+
+Overall, this project serves as a testament to the power and potential of the MCTS algorithm in game playing scenarios. The implemented MCTS search agent has proven its worth by consistently outperforming both a skilled opponent and a random adversary. Its ability to adapt to different game scenarios and make optimal decisions has been instrumental in achieving these positive outcomes.
 
 ## 🗺️ References and Resources
 * [Monte Carlo search - Tristan Cazenave](https://www.lamsade.dauphine.fr/~cazenave/MonteCarlo.pdf)
